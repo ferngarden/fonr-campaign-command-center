@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F3F0EA;
+  color: #3C3C3C;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F0EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: #C4C4C4 #F3F0EA;
+  scrollbar-width: thin;
+}
+
+/* Progress bar styling */
+.progress-bar {
+  background: linear-gradient(to right, currentColor, currentColor);
+}
+
+/* Smooth transitions */
+button, a, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
