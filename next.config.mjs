@@ -4,7 +4,5 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/fonr-campaign-command-center' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/fonr-campaign-command-center/' : '',
 }
 export default nextConfig
